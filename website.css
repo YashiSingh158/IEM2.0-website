@@ -1,0 +1,219 @@
+/* Reset some default styles */
+body, #root {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+#root {
+    position: relative;
+}
+
+body button:not(:disabled) {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body label {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Styling for the chatroom */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#052b77,#3d014c);
+    color: #333; /* Text color for the chatroom */
+    font-family: 'Arial', sans-serif;
+}
+
+.chat-heading {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ff6b6b; /* Vibrant pink */
+}
+
+.chatbox {
+    flex-grow: 1;
+    max-height: 50vh;
+    width: 60%;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    border : 5px solid rgb(4, 80, 117);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.message-container {
+    height: 70%;
+    width: 70%;
+}
+
+.message-content {
+    font-size: 14px; /* Adjust the font size */
+    font-family: 'Arial', sans-serif; /* Choose a stylish font */
+    color: #555; /* Text color */
+    margin: 5px 0;
+    line-height: 1.5; /* Line height for better readability */
+    text-align: left;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    /* border : 3px solid rgb(90, 114, 126); */
+    width: 61%;
+}
+
+/* ... rest of the code ... */
+
+#message-input {
+    flex: 1;
+    padding: 5px;
+}
+
+#emoji-button,
+#send-button {
+    padding: 5px 10px;
+    background-color: #ff6b6b; /* Vibrant pink */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+#emoji-button:hover,
+#send-button:hover {
+    background-color: #ff4f4f; /* Darker pink on hover */
+}
+
+.emoji-tray {
+    display: none;
+    position: absolute;
+    top: -40px; /* Position above the emoji button */
+    left: 0;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-tray-visible {
+    display: flex;
+    content: none;
+}
+
+.emoji-tray-visible hey{
+    display: flex;
+    content: block;
+} 
+
+.emoji {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.reply-button {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #4f9bff; /* Vibrant blue */
+    font-size: 14px;
+    margin-right: 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.reply-button:hover {
+    color: #2d7fff; /* Darker blue on hover */
+    transform: scale(1.1);
+}
+
+.report-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ff4f4f; /* Vibrant red */
+    font-size: 14px;
+    margin-right: 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.report-button:hover {
+    color: #ff2d2d; /* Darker red on hover */
+    transform: scale(1.1);
+}
+
+/* Contact Us Section */
+.contact {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    color: #ff6b6b; /* Vibrant pink */
+}
+
+.contact p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* Helpline Link */
+.helpline-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6b6b; /* Vibrant pink */
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.helpline-link:hover {
+    background-color: #ff4f4f; /* Darker pink on hover */
+}

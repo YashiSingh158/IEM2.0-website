@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatroom</title>
+    <link rel="stylesheet" type="text/css" href="website.css">
+    <style>
+        /* Your additional CSS code here */
+        .helpline-link {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff6b6b; /* Vibrant pink */
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .helpline-link:hover {
+            background-color: #ff4f4f; /* Darker pink on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <div class="handle">
+                <img src="images/top_image.jpg" alt="Handle Icon">
+            </div>
+        </header>
+        <div class="chatbox">
+            <div class="message-container" id="message-container">
+                <!-- Existing and newly appended messages will be here -->
+            </div>
+        </div>
+        <div class="input-container">
+            <!-- <input type="text" id="message-input" placeholder="Type your message..."> -->
+            <textarea type="text" id="message-input" placeholder="Type your message..."></textarea>
+            <button id="emoji-button">😀</button>
+            <button id="send-button">Send</button>
+            <div id="emoji-tray" class="emoji-tray">
+                <div class="emoji">😀</div>
+                <div class="emoji">😃</div>
+                <div class="emoji">😄</div>
+                <div class="emoji">😁</div>
+                <div class="emoji">😆</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to get in touch with us:</p>
+        <ul>
+            <li><br><br>ayushreeshukla1011@gmail.com</li>
+            <li>Phone: +91 7905082910</li><br>
+            <li>yashisingh384@gmail.com</li>
+            <li>Phone: +91 6307580498</li><br>
+            <li>krishnasuraj30@gmail.com</li>
+            <li>Phone: +91 99625 85566</li><br>
+            <li>kamakhya.bh@gmail.com</li>
+            <li>Phone: +91 99117 45599</li><br>
+        </ul>
+    </section>
+
+    <a href="http://www.aasra.info/helpline.html" class="helpline-link" target="_blank">Need Help? Suicide Prevention Helpline</a>
+    <script src="website.js"></script>
+</body>
+</html>
